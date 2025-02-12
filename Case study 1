@@ -1,0 +1,111 @@
+#CASE STUDY 1 : Grocery Store Calculator
+print("1-Vegetables")
+print("2-Fruits")
+print("3-Dairy Product")
+print("4-Grains and Pulses")
+print("5-Spices")
+print("Select product category number from the above template:")
+n=int(input(""))
+
+if n==1:
+  print("1-Potato-30/kg")
+  print("2-Spinach-20/kg")
+  print("3-Onion-50/kg")
+  print("4-Brinjal-45/kg")
+  print("which vegetable you want to buy from the list?")
+  item=int(input(""))
+  print("How many kgs you want to buy(in kgs)?")
+  quan=int(input(""))
+  if item==1:
+    totalcost=30*quan
+  elif item==2:
+    totalcost=20*quan
+  elif item==3:
+    totalcost=50*quan
+  elif item==4:
+    totalcost=45*quan
+
+elif n==2:
+  print("1-Pomogranate-60/kg")
+  print("2-Oranges-30/kg")
+  print("3-Apple-70/kg")
+  print("4-Grapes-40/kg")
+  print("which Fruit you want to buy from the list?")
+  item=int(input(""))
+  print("How many kgs you want to buy(in kgs)?")
+  quan=int(input(""))
+  if item==1:
+    totalcost=60*quan
+  elif item==2:
+    totalcost=30*quan
+  elif item==3:
+    totalcost=70*quan
+  elif item==4:
+    totalcost=40*quan
+
+elif n==3:
+  print("1-Milk-60/kg")
+  print("2-Curd-30/kg")
+  print("3-Buttermilk-70/kg")
+  print("4-Paneer-240/kg")
+  print("which dairy product you want to buy from the list?")
+  item=int(input(""))
+  print("How many kgs you want to buy(in kgs)?")
+  quan=int(input(""))
+  if item==1:
+    totalcost=60*quan
+  elif item==2:
+    totalcost=30*quan
+  elif item==3:
+    totalcost=70*quan
+  elif item==4:
+    totalcost=240*quan
+
+elif n==4:
+  print("1-Rice-180/kg")
+  print("2-Wheat-200/kg")
+  print("3-moong dal-140/kg")
+  print("4-toor daal-100/kg")
+  print("which Grains and Pulses you want to buy from the list?")
+  item=int(input(""))
+  print("How many kgs you want to buy(in kgs)?")
+  quan=int(input(""))
+  if item==1:
+    totalcost=180*quan
+  elif item==2:
+    totalcost=200*quan
+  elif item==3:
+    totalcost=140*quan
+  elif item==4:
+    totalcost=100*quan
+
+disvalue=0 
+if totalcost>300:
+  disvalue=(20/100)*totalcost
+elif totalcost>200:
+  disvalue=(10/100)*totalcost
+
+bill=totalcost-disvalue
+gstbill=((18/100)*bill)+bill 
+gst=((18/100)*bill)
+print("_")
+print("your bill is")
+print("   MEGAMART    ") 
+print("   GROCERY STORE    ") 
+print("Product type :",n) 
+print("serial no. of product :",item)
+print("quantity of product (in kgs) :",quan)
+print("TOTAl PRICE:",totalcost)
+print("DISCOUNTED PRICE:",disvalue)
+print("Gst is 8%")
+print("Gst value:",gst)
+print("BILL AFTER GST:",gstbill)
+
+
+
+
+
+
+
+
+
